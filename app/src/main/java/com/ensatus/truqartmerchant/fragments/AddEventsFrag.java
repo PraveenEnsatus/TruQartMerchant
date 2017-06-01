@@ -1,17 +1,13 @@
 package com.ensatus.truqartmerchant.fragments;
 
 import android.app.ProgressDialog;
-import android.content.ContentResolver;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.database.Cursor;
 import android.net.Uri;
 import android.os.Bundle;
-import android.provider.ContactsContract;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AlertDialog;
-import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -49,23 +45,31 @@ import java.util.Map;
  */
 
 public class AddEventsFrag extends Fragment {
+    private static final String TAG = AddEventsFrag.class.getSimpleName();
+    private final int PICK_FROM_GALLERY = 1;
     User user = MyApplication.getInstance().getPrefManager().getUser();
+    DatePicker dt;
+    String mImageString;
+    String mEncodedImageData = "";
     private String MERCHANT_ID = user.getmId();
-    private  static final String TAG = AddEventsFrag.class.getSimpleName();
     private ImageView mBrowseIcon;
     private EditText mEndDate, mStartDate;
     private Button mSeldate, mSelTime, mUploadButton;
-    private final int PICK_FROM_GALLERY = 1;
     private LinearLayout mCalenderLay, mWatchLay;
     private TextView mAddEventTxt;
-    DatePicker dt;
     private String dateTimeStr, mSD,mED;
     private int hh, mi;
     private Boolean mDateState;
-    String mImageString;
-    String mEncodedImageData = "";
     private EditText mEventName, mEventDesc, mEventAdd;
     private String mEdEventName, mEdEventdesc, mEdEventAdd = null;
+
+    private static String pad(int c) {
+        if (c >= 10)
+            return String.valueOf(c);
+        else
+            return "0" + String.valueOf(c);
+    }
+
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -250,7 +254,6 @@ public class AddEventsFrag extends Fragment {
         }
     }
 
-
     private void mTimeDateDialog(){
 
         final AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
@@ -343,12 +346,7 @@ public class AddEventsFrag extends Fragment {
         alert.show();
         // return dateTimeStr;
     }
-    private static String pad(int c) {
-        if (c >= 10)
-            return String.valueOf(c);
-        else
-            return "0" + String.valueOf(c);
-    }
+
     public boolean ValidateUserEntries() {
         boolean valid = true;
         if (mEventDesc.getText().toString().isEmpty()) {
