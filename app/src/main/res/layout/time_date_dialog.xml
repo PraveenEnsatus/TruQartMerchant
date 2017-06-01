@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+     android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/date_time"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:background="@color/white">
+
+        <Button
+            android:id="@+id/date_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="1dp"
+            android:layout_weight="0.5"
+            android:text="@string/slt_dt"
+            android:textAlignment="center"
+            android:textColor="@color/white_smoke"
+            android:background="@color/colorPrimary"
+            />
+
+        <Button
+            android:id="@+id/time_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="1dp"
+            android:layout_weight="0.5"
+            android:text="@string/slt_tm"
+            android:textAlignment="center"
+            android:textColor="@color/white_smoke"
+            android:background="@color/colorPrimary"
+
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/datePicker"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <DatePicker
+        android:id="@+id/datePicker1"
+        android:headerBackground="@color/colorPrimaryDark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+    </DatePicker>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/timepicker"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+
+        <TimePicker
+            android:id="@+id/timePicker1"
+            android:headerBackground="@color/colorPrimaryDark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+        </TimePicker>
+    </LinearLayout>
+
+</LinearLayout>

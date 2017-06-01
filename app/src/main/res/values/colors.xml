@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+  <color name="colorPrimary">#387a71</color>
+  <color name="colorPrimaryDark">#0c4550</color>
+  <color name="colorAccent">#794bb7</color>
+  <color name="white_smoke">#f8f8f8</color>
+  <color name="white">#ffffff</color>
+  <color name="glitter">#e8ecf0</color>
+  <color name="dark_candy_apple_red">#ae0101</color>
+  <color name="skobeloff">#196b7c</color>
+  <color name="old_lavender">#747474</color>
+  <color name="logo_name">#196882</color>
+  <color name="topaz">#1d9fca</color>
+  <color name="cadmium_orange">#ff8726</color>
+  <color name="trolley_grey">#7d7d7d</color>
+  <color name="forest_green">#279736</color>
+  <color name="manatee">#969696</color>
+  <color name="lime_green">#39b54a</color>
+  <color name="pastel_gray">#cccccc</color>
+  <color name="burnt_sienna">#f26c4f</color>
+  <color name="dark_jungle_green">#1a1a29</color>
+  <color name="dark_green">#062c34</color>
+  <color name="davy_grey">#535353</color>
+  <color name="aurometalsaurus">#777777</color>
+  <color name="trolley_grey_1">#7b7b7b</color>
+  <color name="battleship_grey">#828381</color>
+  <color name="taupe_gray">#898989</color>
+  <color name="dark_gray">#b0adad</color>
+  <color name="platinum">#e1e1e1</color>
+  <color name="raspberry">#ed145b</color>
+  <color name="bg1">#f4f7fa</color>
+  <color name="burnt_orange">#e04b02</color>
+  <color name="liver">#4e4e4e</color>
+  <color name="isabelline">#ececec</color>
+  <color name="carmine_pink">#e74c3c</color>
+  <color name="old_lavender_1">#737373</color>
+  <color name="dark_slate_gray">#245a53</color>
+  <color name="viridian">#387a71</color>
+  <color name="liver_1">#505050</color>
+  <color name="royal_purple">#794bb7</color>
+  <color name="manatee_1">#989898</color>
+  <color name="jade">#00a671</color>
+  <color name="white_smoke_1">#f6f6f6</color>
+  <color name="pearl_aqua">#7accc8</color>
+  <color name="dim_gray">#626262</color>
+  <color name="princeton_orange">#ff9000</color>
+  <color name="carmine_pink_1">#e2574c</color>
+  <color name="silver">#bdbdbd</color>
+  <color name="timberwolf">#d7d7d7</color>
+  <color name="taupe">#363636</color>
+  <color name="verdigris">#55abad</color>
+  <color name="pastel_gray_1">#cdcdcd</color>
+  <color name="taupe_gray_1">#909090</color>
+  <color name="tiffany_blue">#12aeb8</color>
+  <color name="login_btn">#126777</color>
+  <color name="continue_btn">#12606f</color>
+  <color name="faded_white">#05e9e9e9</color>
+  <color name="warm_grey">#9b9b9b</color>
+  <color name="deep_carrot_orange">#f26522</color>
+  <color name="taupe_gray_2">#8a8a8a</color>
+  <color name="dark_gray_1">#acacac</color>
+  <color name="light_brown">#bd5a1e</color>
+  <color name="fern">#7cc576</color>
+  <color name="eggshell">#efe3d4</color>
+  <color name="silver_1">#c2c2c2</color>
+  <color name="platinum_1">#dfedeb</color>
+  <color name="skobeloff_1">#0c727e</color>
+  <color name="ash_grey">#a5babe</color>
+  <color name="very_light_grey">#f3f3f3</color>
+  <color name="medium_slate_blue">#736aec</color>
+  <color name="dark_gray_2">#b1aba8</color>
+  <color name="medium_sea_green">#3cb878</color>
+  <color name="dandelion">#eee025</color>
+  <color name="white_1">#fefefe</color>
+  <color name="saffron">#e4c42e</color>
+  <color name="deep_carrot_orange_1">#e4622e</color>
+  <color name="dim_gray_1">#6c6c6c</color>
+  <color name="dark_gray_3">#a1a1a1</color>
+  <color name="jungle_green">#288f82</color>
+  <color name="white_smoke_2">#f5f5f5</color>
+  <color name="outer_space">#484848</color>
+  <color name="old_lavender_2">#737171</color>
+  <color name="trolley_grey_2">#7e7e7e</color>
+  <color name="coral_pink">#fe8181</color>
+  <color name="sea_green">#249353</color>
+  <color name="carmine_pink_2">#de4a4a</color>
+  <color name="ash_grey_1">#b3b3b3</color>
+  <color name="platinum_2">#e2e2e2</color>
+  <color name="white_smoke_3">#f4f4f4</color>
+  <color name="platinum_3">#e8e8e8</color>
+  <color name="lig_green">#d9ead8</color>
+  <color name="light_blue_grey">#c3ebe7</color>
+  <color name="off_white">#fff8e2</color>
+
+
+
+  <item name="blue" type="color">#FF33B5E5</item>
+  <item name="purple" type="color">#FFAA66CC</item>
+  <item name="green" type="color">#FF99CC00</item>
+  <item name="orange" type="color">#FFFFBB33</item>
+  <item name="red" type="color">#FFFF4444</item>
+  <item name="darkblue" type="color">#FF0099CC</item>
+  <item name="darkpurple" type="color">#FF9933CC</item>
+  <item name="darkgreen" type="color">#FF669900</item>
+  <item name="darkorange" type="color">#FFFF8800</item>
+  <item name="darkred" type="color">#FFCC0000</item>
+
+  <integer-array name="androidcolors">
+    <item>@color/blue</item>
+    <item>@color/purple</item>
+    <item>@color/green</item>
+    <item>@color/orange</item>
+    <item>@color/red</item>
+    <item>@color/darkblue</item>
+    <item>@color/darkpurple</item>
+    <item>@color/darkgreen</item>
+    <item>@color/darkorange</item>
+    <item>@color/darkred</item>
+  </integer-array>
+</resources>
+

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardUseCompatPadding="true"
+
+    card_view:cardCornerRadius="3dp"
+    card_view:cardElevation="2dp">
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:maxWidth="165dp"
+        >
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/itemImg"
+            android:layout_width="match_parent"
+
+            android:layout_height="160dp"
+            android:scaleType="centerCrop" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|bottom"
+            android:background="#CC000000"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/item_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Wedding Blue Suit "
+                android:textStyle="bold"
+                android:maxLines="1"
+                android:gravity="left|center_horizontal"
+                android:textColor="@color/white"
+                android:layout_marginLeft="@dimen/five_space"
+                android:layout_marginRight="@dimen/five_space"
+
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:id="@+id/item_disc_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rupee"
+                    android:maxLines="1"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="@dimen/five_space"
+                    android:layout_marginRight="@dimen/five_space"
+                    android:gravity="left|center_horizontal"
+                    android:textColor="@color/white"
+                    />
+
+            <TextView
+                android:id="@+id/item_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rupee"
+                android:maxLines="1"
+                android:gravity="left|center_horizontal"
+                android:textColor="@color/white"
+
+                />
+
+                <TextView
+                    android:id="@+id/item_disc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/seven_space"
+                    android:background="@color/cadmium_orange"
+                    android:gravity="left|center_horizontal"
+                    android:maxLines="1"
+                    android:padding="2dp"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp"
+                    android:text="@string/rupee"
+                    android:textColor="@android:color/white" />
+
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/item_unit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/units"
+                android:maxLines="1"
+                android:gravity="left|center_horizontal"
+                android:textColor="@color/white"
+                android:layout_marginLeft="@dimen/five_space"
+                android:layout_marginRight="@dimen/five_space"
+
+                />
+        </LinearLayout>
+
+
+
+    </FrameLayout>
+
+
+</android.support.v7.widget.CardView>

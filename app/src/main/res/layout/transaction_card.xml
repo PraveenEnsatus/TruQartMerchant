@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    card_view:cardUseCompatPadding="true"
+    card_view:cardCornerRadius="3dp"
+    card_view:cardElevation="6dp">
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="115dp"
+        app:srcCompat="@drawable/suit"
+        android:id="@+id/pro_image"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="16dp"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:text="9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/no_of_items"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/pro_image"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="16dp"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/liver"
+        app:layout_constraintHorizontal_bias="0.0" />
+
+    <TextView
+        android:text="Men's Stylish Jacket with closed "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@color/liver"
+        android:id="@+id/item_name"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/no_of_items"
+        app:layout_constraintLeft_toLeftOf="@+id/no_of_items" />
+
+    <TextView
+        android:text="@string/order_by"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/orderby"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/ash_grey"
+        android:textSize="10sp"
+        app:layout_constraintTop_toBottomOf="@+id/item_name"
+        app:layout_constraintLeft_toLeftOf="@+id/no_of_items" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/order_by_name"
+        android:textColor="@color/liver_1"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/orderby"
+        app:layout_constraintLeft_toLeftOf="@+id/no_of_items"
+        app:layout_constraintBottom_toBottomOf="@+id/msg_icon"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:padding="@dimen/ten_margin"
+        app:srcCompat="@drawable/ring"
+        android:id="@+id/call_icon"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/msg_icon"
+        app:layout_constraintTop_toTopOf="@+id/msg_icon" />
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:padding="@dimen/ten_margin"
+        app:srcCompat="@drawable/a_s_tmessage"
+        android:id="@+id/msg_icon"
+        android:background="@color/forest_green"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toLeftOf="@+id/call_icon"
+        android:layout_marginStart="8dp"
+        app:layout_constraintLeft_toRightOf="@+id/order_by_name"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintTop_toBottomOf="@+id/orderby"
+        app:layout_constraintBottom_toBottomOf="@+id/pro_image" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView9"
+        android:textColor="@color/medium_slate_blue"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/call_icon"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="16dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="16dp" />
+    <LinearLayout
+
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:padding="@dimen/ten_margin"
+        android:weightSum="1"
+        android:background="@color/white_smoke_3"
+        app:layout_constraintHorizontal_bias="1.0"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView9"
+        android:id="@+id/linearLayout2">
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.475"
+            android:text="@string/mark_completed"
+            android:layout_gravity="left|center_horizontal"
+            android:background="@color/fern"
+            android:textColor="@color/white"/>
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.05"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.475"
+            android:layout_gravity="right|center_vertical"
+            android:text="@string/cancel_order"
+            android:background="@color/dark_candy_apple_red"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:orientation="horizontal"
+        android:layout_width="0dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="@color/lig_green"
+        android:layout_height="50dp"
+        android:gravity="center"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/statusdone"
+            android:layout_gravity="center_vertical"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/status"
+            android:layout_gravity="center_vertical"/>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
+</android.support.v7.widget.CardView>

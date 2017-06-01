@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bankinfo_background">
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/bankroundicon"
+        android:id="@+id/profile_icon"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintVertical_bias="0.39"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="16dp" />
+
+    <TextView
+        android:text="@string/bank_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/create_ur_acc"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/profile_icon"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="16dp"
+        app:layout_constraintHorizontal_bias="1.0"
+        android:textColor="@color/colorPrimaryDark"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/hint_line"
+        android:layout_marginStart="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/create_ur_acc"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="16dp"
+        app:layout_constraintHorizontal_bias="1.0"
+        android:text="@string/for_trxn"
+        android:textSize="12sp"
+        android:textColor="@color/warm_grey"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintRight_creator="1"
+        android:layout_marginRight="16dp"
+        android:background="@color/white"
+        android:weightSum="1"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/hint_line"
+        app:layout_constraintBottom_creator="1"
+        android:id="@+id/name_lay">
+        <ImageView
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="0.2"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/name"/>
+        <EditText
+            android:id="@+id/merchant_ph_no"
+            android:layout_weight="0.8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="bottom"
+            android:hint="@string/name_as_bank"
+            android:textSize="14sp">
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintRight_creator="1"
+        android:layout_marginRight="16dp"
+        android:background="@color/white"
+        android:weightSum="1"
+
+        app:layout_constraintTop_toBottomOf="@+id/name_lay"
+        app:layout_constraintBottom_creator="1"
+        android:id="@+id/merchant_name">
+        <ImageView
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="0.2"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/accountno"/>
+        <EditText
+            android:id="@+id/mrcht_name"
+            android:layout_weight="0.8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="bottom"
+            android:hint="@string/acc_no_txt"
+            android:textSize="14sp">
+        </EditText>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintRight_creator="1"
+        android:layout_marginRight="16dp"
+        android:background="@color/white"
+        android:weightSum="1"
+
+        app:layout_constraintTop_toBottomOf="@+id/merchant_name"
+        app:layout_constraintBottom_creator="1"
+        android:id="@+id/password_layout">
+        <ImageView
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="0.2"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/bankname"/>
+        <EditText
+            android:id="@+id/mrcht_pwd"
+            android:layout_weight="0.8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="bottom"
+            android:hint="@string/bank_name"
+            android:textSize="14sp">
+        </EditText>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintRight_creator="1"
+        android:layout_marginRight="16dp"
+        android:background="@color/white"
+        android:weightSum="1"
+
+        app:layout_constraintTop_toBottomOf="@+id/password_layout"
+        app:layout_constraintBottom_creator="1"
+        android:id="@+id/confirm__pwd_layout">
+        <ImageView
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="0.2"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ifsc"/>
+        <EditText
+            android:id="@+id/confirm_pwd"
+            android:layout_weight="0.8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:layout_gravity="bottom"
+            android:hint="@string/ifsc_code"
+            android:textSize="14sp">
+        </EditText>
+    </LinearLayout>
+
+
+    <TextView
+        android:text="@string/conti"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/continue_btn"
+        app:layout_constraintTop_toBottomOf="@+id/confirm__pwd_layout"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="16dp"
+        android:background="@color/login_btn"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:padding="@dimen/five_space"
+        android:textSize="@dimen/sixteen"
+        android:minHeight="40dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/tclogo"
+        android:id="@+id/imageView5"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="50dp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:text="@string/bank_info"
+        android:singleLine="true"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/bank_info"
+        android:textColor="@color/faded_white"
+        android:textSize="@dimen/banner_name"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+    <TextView
+        android:text="@string/skip_now"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView4"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/continue_btn"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="16dp"
+        android:textColor="@color/deep_carrot_orange"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:minHeight="40dp"
+        android:gravity="center"/>
+
+</android.support.constraint.ConstraintLayout>

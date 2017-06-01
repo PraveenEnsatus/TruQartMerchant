@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="@dimen/activity_horizontal_margin"
+    android:weightSum="1">
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="0.2"
+        android:layout_height="75dp"
+        android:gravity="center">
+
+        <QuickContactBadge android:id="@+id/icon"
+            android:visibility="gone"
+            android:layout_height="?android:attr/listPreferredItemHeight"
+            android:layout_width="?android:attr/listPreferredItemHeight"
+            android:scaleType="centerCrop"
+            />
+        <TextView
+
+            android:padding="2dp"
+            android:background="@drawable/circle_shape"
+            android:id="@+id/icon_text"
+            android:layout_height="?android:attr/listPreferredItemHeight"
+            android:layout_width="?android:attr/listPreferredItemHeight"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="30sp">
+
+        </TextView>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="0.5"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/contact_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:textSize="@dimen/activity_horizontal_margin"
+            android:textColor="@color/liver"
+            />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/contact_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/five_space"
+            android:textColor="@color/manatee"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="0.3"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|center"
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/call"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ring"
+            android:padding="@dimen/five_space"
+
+            android:layout_gravity="center"/>
+
+        <ImageView
+            android:id="@+id/msg"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_action_name"
+            android:padding="@dimen/five_space"
+
+            android:layout_gravity="center"/>
+
+        <ImageView
+            android:visibility="gone"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:id="@+id/add_cust"
+            android:contentDescription="@string/add"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:src="@drawable/inviteicon"
+            android:padding="@dimen/five_space"
+            android:layout_gravity="end|center"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

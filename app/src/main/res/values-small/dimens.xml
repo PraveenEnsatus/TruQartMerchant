@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="logo_wd_ht">125dp</dimen>
+    <dimen name="logo_txt_sz">30dp</dimen>
+    <dimen name="profile_pic">60dp</dimen>
+</resources>

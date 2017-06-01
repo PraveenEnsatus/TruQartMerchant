@@ -1,0 +1,21 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="profile">80dp</dimen>
+    <dimen name="small_padding">10dp</dimen>
+    <dimen name="ten_margin">10dp</dimen>
+    <dimen name="five_space">5dp</dimen>
+    <dimen name="seven_space">7dp</dimen>
+
+
+    <dimen name="image_final_width">32dp</dimen>
+    <dimen name="image_width">120dp</dimen>
+    <dimen name="spacing_normal">16dp</dimen>
+    <dimen name="logo_wd_ht">150dp</dimen>
+    <dimen name="logo_txt_sz">33dp</dimen>
+    <dimen name="sixteen">16sp</dimen>
+    <dimen name="sixty">60sp</dimen>
+    <dimen name="fifty_eight">58sp</dimen>
+    <dimen name="banner_name">55sp</dimen>
+</resources>

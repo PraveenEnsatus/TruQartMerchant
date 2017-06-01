@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="30dp"
+    android:background="@drawable/nametag"
+     >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="@string/full_name"
+        android:gravity="center"
+        android:paddingLeft="@dimen/five_space"/>
+    <ImageView
+        android:padding="2dp"
+        android:layout_width="25dp"
+        android:layout_height="match_parent"
+        android:src="@drawable/cancel"
+        android:gravity="right|center"
+
+        android:layout_weight="0.02" />
+
+</LinearLayout>
