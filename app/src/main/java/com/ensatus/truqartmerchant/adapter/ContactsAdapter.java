@@ -1,37 +1,16 @@
 package com.ensatus.truqartmerchant.adapter;
 
-import android.annotation.SuppressLint;
 import android.content.Context;
-import android.database.Cursor;
-import android.net.Uri;
-import android.provider.ContactsContract;
-import android.support.v4.widget.CursorAdapter;
-import android.support.v7.widget.CardView;
-import android.support.v7.widget.RecyclerView;
-import android.text.SpannableString;
-import android.text.TextUtils;
-import android.text.style.TextAppearanceSpan;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AlphabetIndexer;
 import android.widget.BaseAdapter;
-import android.widget.ImageView;
-import android.widget.QuickContactBadge;
-import android.widget.SectionIndexer;
 import android.widget.TextView;
 
-import com.android.volley.toolbox.ImageLoader;
-import com.android.volley.toolbox.NetworkImageView;
 import com.ensatus.truqartmerchant.R;
-import com.ensatus.truqartmerchant.app.Utils;
 import com.ensatus.truqartmerchant.module.Contact;
 
 import java.util.ArrayList;
-import java.util.List;
-import java.util.Locale;
-
-import de.hdodenhof.circleimageview.CircleImageView;
 
 /**
  * Created by Praveen on 20-12-2016.
@@ -42,7 +21,7 @@ public class ContactsAdapter extends BaseAdapter {
     private Context mContext;
 
     public ContactsAdapter(ArrayList<Contact> mArrayContacts, Context mContext) {
-        this.mArrayContacts = mArrayContacts;
+        ContactsAdapter.mArrayContacts = mArrayContacts;
         this.mContext = mContext;
     }
 
@@ -61,16 +40,9 @@ public class ContactsAdapter extends BaseAdapter {
         return position;
     }
 
-    public class ContactView {
-        TextView mItemNumber, mItemName, mItemIcon;
-
-
-    }
-
-
     public void addItems(ArrayList<Contact> mArrayList) {
         for (int i = 0; i < mArrayList.size(); i++) {
-            this.mArrayContacts.add(mArrayList.get(i));
+            mArrayContacts.add(mArrayList.get(i));
         }
         notifyDataSetChanged();
     }
@@ -103,8 +75,15 @@ public class ContactsAdapter extends BaseAdapter {
 
         return convertView;
     }
+
     Contact getContact(int position) {
         return ((Contact) getItem(position));
+    }
+
+    public class ContactView {
+        TextView mItemNumber, mItemName, mItemIcon;
+
+
     }
 
 
